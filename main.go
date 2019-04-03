@@ -15,7 +15,7 @@ func versionHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	log.Printf("Listening on port 8000...")
+	log.Printf("Listening on port 8000...now")
 	http.HandleFunc("/version", versionHandler)
 	http.ListenAndServe(":8000", nil)
 }
