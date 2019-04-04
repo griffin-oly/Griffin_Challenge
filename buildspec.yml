@@ -9,6 +9,8 @@ phases:
   install: 
     commands:
       - echo Entered the install phase...
+      - pwd
+      - ls -l
       - go version
       - go get -u github.com/golang/lint/golint
       - cp /static .
