@@ -1,11 +1,17 @@
-version: 0.1
+version: 0.2
+
+environment_variables:
+  plaintext:
+    SRC_DIR: /static
             
 phases:
 
   install: 
     commands:
+      - echo Entered the install phase...
       - go version
       - go get -u github.com/golang/lint/golint
+      - cp /static .
 
   pre_build: 
     commands:
