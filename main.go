@@ -1,5 +1,7 @@
 package main
 
+// Static content example page
+
 import (
 	"io"
 	"log"
