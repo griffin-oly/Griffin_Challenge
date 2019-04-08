@@ -127,7 +127,7 @@ This new repository will be used for developing your application, infrastructure
 
 The pipeline is available as a [AWS CloudFormation](https://aws.amazon.com/cloudformation) template, and included in this repository ([see cloudformation/pipeline.yml](cloudformation/pipeline.yml)). Click the following button to deploy it to your AWS account in the `us-east-1` region:
  
-[![cloudformation-launch-stack](images/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=\<myapp>-pipeline&templateURL=https://s3.amazonaws.com/golang-deployment-pipeline/cloudformation/pipeline.yml)  
+[![cloudformation-launch-stack](images/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=\<myapp>-pipeline&templateURL=https://s3.amazonaws.com/Griffin_Cloud/pipeline.yml)  
 
 You will need to provide some parameters to point [AWS CodePipeline](https://aws.amazon.com/codepipeline) to the repository you forked in your account. For example:
 
