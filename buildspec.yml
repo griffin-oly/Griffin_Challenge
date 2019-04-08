@@ -26,9 +26,16 @@ phases:
 
       # Build our application
       - go build -o app
+      - df -h
+      - pwd
+      - ls -l
+      - mkdir -p static/stylesheets
+
   post_build:
     commands:
       - mkdir -p static
+      - pwd
+      - ls -l
 
 artifacts:
   files:
