@@ -4,7 +4,7 @@ Description: >
     development. It includes building with AWS CodeBuild, and infrastructure
     deployment via AWS CloudFormation. It will create an AWS CodePipeline for
     orchastrating builds, testing and deployments to beta and production 
-    environments. 
+    environments. Griffins Challenge.
 
 Parameters:
     

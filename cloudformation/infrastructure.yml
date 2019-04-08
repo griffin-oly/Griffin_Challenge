@@ -5,7 +5,7 @@ Description: >
     agent installed ready for application deployments. It will also deploy a VPC with public and private 
     subnets. An Application Load Balancer is placed in the public subnets, which forwards traffic to the
     application servers in the private subnets. NAT Gateways are deployed in each AZ to facilitate outbound
-    traffic from the application servers to the internet.
+    traffic from the application servers to the internet. Griffins Challenge.
 
 Parameters:
 
@@ -171,6 +171,8 @@ Resources:
             IamInstanceProfile: !Ref InstanceProfile
             SecurityGroups: 
                 - !Ref ApplicationSecurityGroup
+            KeyName: 
+              Ref: "loc_ansible"
             UserData: !
                 "Fn::Base64": !Sub 
                     - |+
