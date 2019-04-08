@@ -1,6 +1,6 @@
 package main
 
-// Static content example page
+// Static content example page with Hello world
 
 import (
 	"io"
