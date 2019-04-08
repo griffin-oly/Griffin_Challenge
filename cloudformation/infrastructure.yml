@@ -171,8 +171,7 @@ Resources:
             IamInstanceProfile: !Ref InstanceProfile
             SecurityGroups: 
                 - !Ref ApplicationSecurityGroup
-            KeyName: 
-              Ref: "loc_ansible"
+            KeyName: "loc_ansible"
             UserData: !
                 "Fn::Base64": !Sub 
                     - |+
